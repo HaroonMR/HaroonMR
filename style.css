@@ -200,7 +200,7 @@ body::before {
     pointer-events: none;
     position: fixed;
     inset: 0;
-    background: url("Images/pexels-merlin-11167645.jpg") center/cover no-repeat;
+    background: url("pexels-merlin-11167645.jpg") center/cover no-repeat;
     opacity: 0.2;
     z-index: -1;
     background-attachment: fixed;
@@ -217,4 +217,5 @@ body{
     background-size: 200% 200%;
     padding: 0;
     z-index: 0;
+
 }
