@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+        min-height: 100vh;
+        display: flex;
+        flex-direction:column;
+        z-index: 2;
+}
+.Box1 {
+    background-color: rgba(0, 0, 0, 0.55); /* black with 50% transparency */
+    width: 100%;
+    height: 75px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);  /* blur background behind it */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    display: flex;
+    z-index: 3;
+    position: fixed;
+}
+.Box1 h1{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-left: 25px;
+    font-family: poppins, sans-serif;
+    color: white;
+}
+#Obj1{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 60px;
+    z-index: 2;
+}
+#Acheivements{
+    width: 50%;
+    background-color: #000000;
+    width:600px;
+    height: 1000px;
+    margin-top: -5px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+}
+#Acheivements h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+#Skills{
+    width: 50%;
+    background-color: #000000;
+    width:600px;
+    height: 310px;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+}
+#Skills h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+}
+.row1 img{
+    width: 125px;
+    height: auto;
+    margin-right: 115px;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+.row2 img{
+    width: 100px;
+    height: auto;
+    margin-right: 140px;
+}
+#Projects{
+    width: 50%;
+    background-color: #000000;
+    width:600px;
+    height: 1000px;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+}
+#Project1{
+    margin-top: 20px;
+    width: 400px;   /* your container size */
+    height: 420px;  /* your container size */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    background-color: #c7c7c7;
+    border-radius: 8px;
+}
+#Project1 img{
+    object-fit: contain;
+    width: 300px;
+    height: 100%;
+}
+#Projects h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+#Obj2{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.Box2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    width:600px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    margin-left: 75px;
+    cursor: pointer;
+}
+.Box2 h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+#Profile{
+    display: flex;
+    /* align-items: center; */
+    padding: 20px;
+    background-color: rgba(0, 0, 0);
+    width:600px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    cursor: pointer;
+}
+#Text h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 2rem;
+    color: white;
+}
+#Profile img{
+    height: 200px;
+    margin-right: 20px;
+}
+#Profile pre{
+    height: 100px;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: top;
+}
+body::before {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    background: url("Images/pexels-merlin-11167645.jpg") center/cover no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+body{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #10002b, #240046, #3c096c, #5a189a, #7b2cbf, #9d4edd);
+    background-size: 200% 200%;
+    padding: 0;
+    z-index: 0;
+}
